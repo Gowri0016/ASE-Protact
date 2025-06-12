@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaShieldAlt, FaBell, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
+import Logo from '../Asset/Logo.png'
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <motion.header
-      className="relative z-50 bg-black/60 backdrop-blur-md text-white px-4 py-3 shadow-2xl"
+      className="relative z-50 bg-white backdrop-blur-md text-black px-4 py-3 shadow-2xl"
       initial={{ opacity: 0, y: -60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: 'easeOut' }}
@@ -18,13 +18,9 @@ export default function Header() {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Branding */}
         <div className="flex items-center space-x-3">
-          <div className="bg-red-600 p-2 rounded-full shadow-xl">
-            <FaShieldAlt size={24} className="text-white drop-shadow-lg animate-pulse" />
-          </div>
-          <h1 className="text-2xl font-extrabold tracking-widest drop-shadow-sm">
-            <span className="text-white">ASE</span>{' '}
-            <span className="text-orange-300">Protact</span>
-          </h1>
+          <img className="text-2xl w-24 font-extrabold tracking-widest drop-shadow-sm" src={Logo} alt='Loading...!'>
+            
+          </img>
         </div>
 
         {/* Desktop Nav */}
@@ -74,7 +70,7 @@ export default function Header() {
       </AnimatePresence>
 
       {/* Subtext */}
-      <p className="text-center mt-3 text-sm md:text-base italic text-white/90 tracking-wide">
+      <p className="text-center mt-3 text-sm md:text-base italic text-black/90 tracking-wide">
         Your trusted partner in fire safety — innovate. protect. save lives.
       </p>
     </motion.header>
