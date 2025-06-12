@@ -2,37 +2,61 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaCheckCircle, FaHeadset, FaTools, FaShieldAlt, FaFireExtinguisher, FaUserShield } from 'react-icons/fa';
 
-import Helmet from '../Asset/pop-zebra-wp81DxKUd1E-unsplash.jpg';
-import Gogles from '../Asset/mier-chen-Bebn0qrGEfM-unsplash.jpg';
-import Glows from '../Asset/claudio-schwarz-L8iPDE99z9c-unsplash.jpg';
-import Exester from '../Asset/istockphoto-1215003852-612x612.webp';
-import Cloth from '../Asset/markus-spiske-4p0lT6_bRVU-unsplash.jpg';
+import Exit from '../Asset/Exit.jpeg'
+import Hydrant from '../Asset/fire-hydrant-systems-india.webp'
+import Pump from '../Asset/Pump.avif'
+import Exu from '../Asset/iStock-1188013372.jpg'
+import Plan from '../Asset/PlanSafety.png'
+import Door from '../Asset/Types-of-Emergency-exit-doors-and-everything-you-must-know-about-them.jpg'
+import Alaram from '../Asset/Firealaram.png'
+import Huper from '../Asset/jakub-zerdzicki-GCmVg5lztwI-unsplash.jpg'
+import Traing from '../Asset/traing.png'
 
 const bannerSlides = [
   {
-    img: Helmet,
-    title: 'Protective Helmet',
-    desc: 'Top-tier head protection for hazardous environments.',
+    img: Exit,
+    title: 'Emergency Lighting System',
+    desc: 'Automatically activated illumination for clear visibility during evacuations and blackouts.',
   },
   {
-    img: Gogles,
-    title: 'Safety Goggles',
-    desc: 'Guard your vision from flames and fumes.',
+    img: Hydrant,
+    title: 'Automatic Fire Suppression System',
+    desc: 'Integrated solutions like sprinklers and gas-based systems for early-stage fire control.',
   },
   {
-    img: Glows,
-    title: 'Fire-Resistant Gloves',
-    desc: 'Grip and protect with high-heat resistant gloves.',
+    img: Pump,
+    title: 'Fire Safety Audits',
+    desc: 'Comprehensive assessments to identify risks, ensure compliance, and improve response plans.',
   },
   {
-    img: Exester,
-    title: 'Fire Extinguisher',
-    desc: 'Essential for emergency response and safety.',
+    img: Traing,
+    title: 'Fire Safety Training Programs',
+    desc: 'Live drills and hands-on training sessions designed to prepare your team for real-world emergencies.',
   },
   {
-    img: Cloth,
-    title: 'Safety Gear Suit',
-    desc: 'Full-body suit designed to withstand extreme heat.',
+    img: Plan,
+    title: 'On-Site Fire Safety Planning',
+    desc: 'Custom safety layouts designed for optimal evacuation and hazard containment.',
+  },
+  {
+    img: Exu,
+    title: 'Passive Fire Protection',
+    desc: 'Fire-rated walls, ceilings, and insulation materials to contain fire and minimize spread.',
+  },
+  {
+    img: Alaram,
+    title: 'Smart Control Panels',
+    desc: 'Centralized control for monitoring all fire safety equipment and alerts in real time.',
+  },
+  {
+    img: Door,
+    title: 'Fireproof Storage Solutions',
+    desc: 'Safeguard critical documents and digital assets with certified fire-resistant vaults.',
+  },
+  {
+    img: Huper,
+    title: 'Integrated Building Safety Systems',
+    desc: 'Synchronizing fire, security, and access systems for rapid emergency coordination.',
   },
 ];
 
@@ -74,12 +98,12 @@ export default function Detail() {
           >
             <h1 className="text-5xl font-extrabold tracking-widest drop-shadow-lg">
               <motion.span
-                className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent"
+                className="bg-gradient-to-tr from-red-500 via-red-500 to-orange-400 bg-clip-text text-transparent"
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1.1 }}
                 transition={{ repeat: Infinity, repeatType: "reverse", duration: 2 }}
               >
-                ASE Protact
+                <span className="text-white">ASE</span> PRO TACT
               </motion.span>
             </h1>
             <h2 className="text-3xl mt-4 font-semibold">{title}</h2>

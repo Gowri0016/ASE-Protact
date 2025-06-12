@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
-export default function Footer() {
+function Footer() {
   return (
     <div className="relative bg-gradient-to-tr from-black via-red-800 to-orange-700 text-white pt-10">
       {/* SVG Wave Top */}
@@ -50,24 +50,33 @@ export default function Footer() {
         <div className="grid gap-4 sm:grid-cols-3 text-sm max-w-4xl mx-auto mb-10 text-white/80">
           <div>
             <h4 className="font-semibold text-white mb-1">📞 Contact</h4>
-            <p>+91 938-459-3993</p>
+            <a href="tel:+919384593993" className="hover:underline text-white/80">
+              +91 938-459-3993
+            </a>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-1">📧 Email</h4>
-            <p>@aseprotact@gmail.com</p>
+            <p>aseprotact@gmail.com</p>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-1">📍 Address</h4>
-            <p>Karupprayan Kovil,Avinashi Road,Tiruppur, Tamil Nadu – 641602, India</p>
+            <p>Karupprayan Kovil, Avinashi Road, Tiruppur, Tamil Nadu – 641602, India</p>
           </div>
         </div>
 
         {/* Footer Bottom */}
         <div className="border-t border-white/30 pt-4 text-sm text-white/60">
-          <p>&copy; {new Date().getFullYear()} <span className="text-white">ASE Protact</span>. All rights reserved.</p>
-          <p className="mt-1 text-white/70">Built with ❤️ by <span className="font-semibold text-orange-300">Poeage IT Solution</span></p>
+          <p>
+            &copy; {new Date().getFullYear()}{' '}
+            <span className="text-white">ASE Protact</span>. All rights reserved.
+          </p>
+          <p className="mt-1 text-white/70">
+            Built with ❤️ by <span className="font-semibold text-orange-300">Poeage IT Solution</span>
+          </p>
         </div>
       </motion.div>
     </div>
   );
 }
+
+export default Footer;
