@@ -48,7 +48,7 @@ export default function Header() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="md:hidden mt-3 flex flex-col gap-3 px-4 py-5 bg-white/10 backdrop-blur-md rounded-xl shadow-inner text-white"
+            className="md:hidden mt-3 flex flex-col gap-3 px-4 py-5 bg-black backdrop-blur-md rounded-xl shadow-inner text-white"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}

@@ -6,7 +6,7 @@ export default function About() {
   const stats = [
     { label: '100% Quality', icon: <FaCheckCircle className="text-green-500 text-3xl" /> },
     { label: '24/7 Support', icon: <FaClock className="text-blue-500 text-3xl" /> },
-    { label: '100+ Products', icon: <FaBoxOpen className="text-yellow-500 text-3xl" /> },
+    { label: '500+ Products', icon: <FaBoxOpen className="text-yellow-500 text-3xl" /> },
     { label: '5-Star Rated', icon: <FaStar className="text-orange-500 text-3xl" /> },
   ];
 
