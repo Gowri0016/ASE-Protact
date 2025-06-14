@@ -10,7 +10,6 @@ import Plan from '../Asset/PlanSafety.png'
 import Door from '../Asset/Types-of-Emergency-exit-doors-and-everything-you-must-know-about-them.jpg'
 import Alaram from '../Asset/Firealaram.png'
 import Huper from '../Asset/jakub-zerdzicki-GCmVg5lztwI-unsplash.jpg'
-import Traing from '../Asset/traing.png'
 
 const bannerSlides = [
   {
@@ -27,11 +26,6 @@ const bannerSlides = [
     img: Pump,
     title: 'Fire Safety Audits',
     desc: 'Comprehensive assessments to identify risks, ensure compliance, and improve response plans.',
-  },
-  {
-    img: Traing,
-    title: 'Fire Safety Training Programs',
-    desc: 'Live drills and hands-on training sessions designed to prepare your team for real-world emergencies.',
   },
   {
     img: Plan,
