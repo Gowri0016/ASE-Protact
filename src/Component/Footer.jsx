@@ -81,7 +81,7 @@ function Footer() {
             <span className="text-white">ASE Protact</span>. All rights reserved.
           </p>
           <p className="mt-1 text-white/70">
-            Built with ❤️ by <span className="font-semibold text-orange-300">Poeage IT Solution</span>
+            Built with ❤️ by <span className="font-semibold text-orange-300">Poeage Tech.Pvt.Ltd</span>
           </p>
         </div>
       </motion.div>
